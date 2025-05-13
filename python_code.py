@@ -10,7 +10,7 @@ import tempfile
 # 🧮 Load and Merge Data
 @st.cache_data
 def load_data():
-    player_info = pd.read_csv("player_info_modified_v2.csv")
+    player_info = pd.read_csv("player_info.csv")
     usage = pd.read_csv("sp1_dw_aggr.csv")
 
     usage['playerid'] = usage['playerid'].astype(str)
